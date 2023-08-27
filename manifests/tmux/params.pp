@@ -14,6 +14,9 @@ class sys::tmux::params {
     redhat: {
       $package = 'tmux'
     }
+    archlinux: {
+      $package = 'tmux'
+    }
     default: {
       fail("Do not know how to install tmux on ${::osfamily}.")
     }

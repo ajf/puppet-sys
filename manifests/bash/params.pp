@@ -35,6 +35,11 @@ class sys::bash::params {
       $path     = '/bin/bash'
       $defpath  = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     }
+    archlinux: {
+      $package  = 'bash'
+      $path     = '/usr/bin/bash'
+      $defpath  = '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin'
+    }
     default: {
       fail("Don't know how to install bash on ${::osfamily}.\n")
     }

@@ -20,6 +20,9 @@ class sys::git::params {
     redhat: {
       $package  = 'git-core'
     }
+    archlinux: {
+      $package  = 'git'
+    }
     windows: {
       $version = '2.5.0'
       $release_tag = "v${version}.windows.1"
